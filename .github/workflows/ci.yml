@@ -41,7 +41,7 @@ jobs:
   publish:
     needs: build
     runs-on: ubuntu-latest
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main' && secrets.NPM_TOKEN != ''
 
     steps:
     - uses: actions/checkout@v3
@@ -58,7 +58,16 @@ jobs:
     - name: Build
       run: npm run build
 
+    - name: Bump version
+      run: npm version patch --no-git-tag-v
+
     - name: Publish to npm
       run: npm publish
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+    - name: Push version bump back to repo
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git push origin main
