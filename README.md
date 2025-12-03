@@ -14,13 +14,13 @@ A lightweight React hook for detecting clicks outside of a component. Perfect fo
 ## Installation
 
 ```bash
-npm install clickaway
+npm i @azeagakhan/clickaway
 ```
 
 or with yarn:
 
 ```bash
-yarn add clickaway
+yarn add @azeagakhan/clickaway
 ```
 
 ## Usage
@@ -28,7 +28,7 @@ yarn add clickaway
 ### Basic Example
 
 ```jsx
-import { useOutsideClick } from 'clickaway';
+import { useOutsideClick } from '@azeagakhan/clickaway';
 import { useState } from 'react';
 
 export function Dropdown() {
@@ -55,7 +55,7 @@ export function Dropdown() {
 ### With TypeScript Custom Element
 
 ```tsx
-import { useOutsideClick } from 'clickaway';
+import { useOutsideClick } from '@azeagakhan/clickaway';
 
 interface CustomElement extends HTMLElement {
   customMethod(): void;
