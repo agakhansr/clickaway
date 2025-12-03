@@ -13,6 +13,7 @@ import { useEffect, useRef } from 'react';
  *
  * return <div ref={ref}>My Component</div>;
  */
+
 export function useOutsideClick<T extends HTMLElement = HTMLElement>(
   callback: () => void,
   enabled: boolean = true,
