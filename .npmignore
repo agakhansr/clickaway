@@ -1,0 +1,15 @@
+src/
+.github/
+.git/
+.gitignore
+.eslintrc.js
+jest.config.js
+tsconfig.json
+PUBLISHING.md
+*.test.tsx
+*.test.ts
+*.map
+node_modules/
+coverage/
+.DS_Store
+*.log

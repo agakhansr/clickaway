@@ -1,0 +1,56 @@
+{
+  "name": "clickaway",
+  "version": "1.0.0",
+  "description": "A React hook for detecting clicks outside of a component",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "jest",
+    "lint": "eslint src --ext .ts,.tsx",
+    "type-check": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "react",
+    "hook",
+    "outside-click",
+    "click-outside",
+    "typescript"
+  ],
+  "author": "Agakhan SR",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/node": "^20.0.0",
+    "esbuild": "^0.19.0",
+    "typescript": "^5.0.0",
+    "eslint": "^8.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "jest": "^29.0.0",
+    "@types/jest": "^29.0.0",
+    "ts-jest": "^29.0.0",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/dom": "^9.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/agakhansr/clickaway"
+  },
+  "bugs": {
+    "url": "https://github.com/agakhansr/clickaway/issues"
+  },
+  "homepage": "https://github.com/agakhansr/clickaway#readme"
+}
