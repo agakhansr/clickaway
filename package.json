@@ -1,5 +1,5 @@
 {
-  "name": "clickaway",
+  "name": "@azeagakhan/clickaway",
   "version": "1.0.0",
   "description": "A React hook for detecting clicks outside of a component",
   "main": "./dist/index.js",
