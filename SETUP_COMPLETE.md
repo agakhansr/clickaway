@@ -1,6 +1,32 @@
 # âœ… Setup Complete - clickaway Package Ready!
 
-## í³‹ What's Been Done
+## ğŸš¨ IMPORTANT: One-Time Setup Required for Auto-Publishing
+
+### Add npm Token to GitHub Secrets
+
+**Without this step, GitHub Actions cannot publish to npm!**
+
+1. **Generate npm token** at: https://npmjs.com/settings/~/tokens
+   - Click "Generate New Token"
+   - Select "Granular Access Token"
+   - Name it: `github-actions`
+   - Give it: "Publish packages" permission
+   - Copy the token (you won't see it again!)
+
+2. **Add to GitHub** as a secret:
+   - Go to: https://github.com/agakhansr/clickaway/settings/secrets/actions
+   - Click: "New repository secret"
+   - Name: `NPM_TOKEN`
+   - Value: Paste your npm token
+   - Click: "Add secret"
+
+**After this, GitHub Actions will automatically publish when you push to main!** âœ…
+
+See `GITHUB_SECRETS_SETUP.md` for detailed instructions.
+
+---
+
+## ğŸ“¦ What's Been Done
 
 ### âœ… Package Development
 - [x] React hook created (`useOutsideClick`)
@@ -40,7 +66,7 @@
 
 ---
 
-## í¾¯ Next Steps (In Order)
+## ï¿½ï¿½ï¿½ Next Steps (In Order)
 
 ### Step 1: GitHub Setup (5 minutes)
 ```bash
@@ -76,7 +102,7 @@ npm publish
 
 ---
 
-## í¾ What Users Will Get
+## ï¿½ï¿½ï¿½ What Users Will Get
 
 Users install with:
 ```bash
@@ -95,7 +121,7 @@ function Dropdown() {
 
 ---
 
-## í³¦ Package Stats
+## ï¿½ï¿½ï¿½ Package Stats
 
 | Metric | Value |
 |--------|-------|
@@ -110,7 +136,7 @@ function Dropdown() {
 
 ---
 
-## í´„ Typical Update Flow (For Future Versions)
+## ï¿½ï¿½ï¿½ Typical Update Flow (For Future Versions)
 
 ```bash
 # Make changes
@@ -128,7 +154,7 @@ npm publish
 
 ---
 
-## í³š Files Reference
+## ï¿½ï¿½ï¿½ Files Reference
 
 | File | Purpose |
 |------|---------|
@@ -145,7 +171,7 @@ npm publish
 
 ---
 
-## í¾‰ You're All Set!
+## ï¿½ï¿½ï¿½ You're All Set!
 
 Your `clickaway` package is:
 - âœ… Fully developed
@@ -154,11 +180,11 @@ Your `clickaway` package is:
 - âœ… Ready for npm
 - âœ… Production quality
 
-**Time to share it with the world! íº€**
+**Time to share it with the world! ï¿½ï¿½ï¿½**
 
 ---
 
-## í²¡ Pro Tips
+## ï¿½ï¿½ï¿½ Pro Tips
 
 1. **Always build before publishing**: `npm run build`
 2. **Run tests before committing**: `npm test`
@@ -170,7 +196,7 @@ Your `clickaway` package is:
 
 ---
 
-## í¶˜ Help & Support
+## ï¿½ï¿½ï¿½ Help & Support
 
 - **npm docs**: https://docs.npmjs.com/
 - **GitHub docs**: https://docs.github.com/
@@ -179,4 +205,4 @@ Your `clickaway` package is:
 
 ---
 
-**Happy publishing! í¾Š**
+**Happy publishing! ï¿½ï¿½ï¿½**
